@@ -4,7 +4,7 @@
 # In[1]:
 
 
-#league of legends 
+#import libraries
 import pandas as pd
 import numpy as np
 import xgboost as xgb
@@ -18,7 +18,7 @@ import seaborn as sns
 
 
 # read in the data
-file = "/Users/kellymclean/2020_Dec_Kaggle_Mining/MiningProcess_Flotation_Plant_Database.csv"
+file = "MiningProcess_Flotation_Plant_Database.csv"
 df = pd.read_csv(file, low_memory=False)
 df.head()
 
@@ -26,7 +26,7 @@ df.head()
 # In[3]:
 
 
-df = pd.read_csv("/Users/kellymclean/2020_Dec_Kaggle_Mining/MiningProcess_Flotation_Plant_Database.csv",decimal=",",parse_dates=["date"],infer_datetime_format=True).drop_duplicates()
+df = pd.read_csv("MiningProcess_Flotation_Plant_Database.csv",decimal=",",parse_dates=["date"],infer_datetime_format=True).drop_duplicates()
 
 
 # In[4]:
